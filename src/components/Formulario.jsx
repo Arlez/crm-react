@@ -7,10 +7,9 @@ const Formulario = () => {
 
     const nuevoClienteSchema = Yup.object().shape({
         nombre: Yup.string().min(3,'El Nombre es muy corto').max(20, 'El nombre es muy largo').required('El Nombre es obligatorio'),
-        empresa: '',
-        email: '',
-        telefono: '',
-        notas: ''
+        empresa: Yup.string().required('El Nombre de la Empresa es obligatorio'),
+        email: Yup.string().email('EMail no valido').required('El Email es obligatorio'),
+        telefono: Yup.number().positive('número no válido').integer('número no válido').typeError('el número no es válido')
     })
 
     const handleSubmit = (values)=>{
@@ -67,6 +66,11 @@ const Formulario = () => {
                                     placeholder='Empresa Cliente'
                                     name='empresa'
                                 />
+                                {errors.empresa && touched.empresa ? (
+                                    <Alerta>
+                                        {errors.empresa}
+                                    </Alerta>
+                                ) : null }
                             </div>
                             <div className='mb-4'>
                                 <label
@@ -80,6 +84,11 @@ const Formulario = () => {
                                     placeholder='Email Cliente'
                                     name="email"
                                 />
+                                {errors.email && touched.email ? (
+                                    <Alerta>
+                                        {errors.email}
+                                    </Alerta>
+                                ) : null }
                             </div>              
                             <div className='mb-4'>
                                 <label
@@ -93,6 +102,11 @@ const Formulario = () => {
                                     placeholder='Teléfono Cliente'
                                     name='telefono'
                                 />
+                                {errors.telefono && touched.telefono ? (
+                                    <Alerta>
+                                        {errors.telefono}
+                                    </Alerta>
+                                ) : null }
                             </div>
                             <div className='mb-4'>
                                 <label
