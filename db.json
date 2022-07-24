@@ -1,3 +1,28 @@
 {
-    "clientes": []
+  "clientes": [
+    {
+      "nombre": "Daniel",
+      "empresa": "Kdoce",
+      "email": "dbarrera@kdoce.cl",
+      "telefono": "979211381",
+      "notas": "alksjdlaksjdlkas lajdlsajdkla kjalskdj alksd",
+      "id": 1
+    },
+    {
+      "nombre": "Diego",
+      "empresa": "Kdoce",
+      "email": "dgonzalez@kdoce.cl",
+      "telefono": "123123123123",
+      "notas": "alksjdlaksjdlkas lajdlsajdkla kjalskdj alksd",
+      "id": 2
+    },
+    {
+      "nombre": "Elizabeth",
+      "empresa": "MTS",
+      "email": "ebustamante@mts.cl",
+      "telefono": "123123123123",
+      "notas": "Nuevo cliente",
+      "id": 3
+    }
+  ]
 }
