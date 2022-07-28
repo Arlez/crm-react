@@ -5,7 +5,6 @@ const VerCliente = () => {
     const {id} = useParams()
 
 
-    console.log(id);
 
     return (
         <div>VerCliente</div>
