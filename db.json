@@ -9,9 +9,9 @@
       "id": 1
     },
     {
-      "nombre": "Diego",
+      "nombre": "Alonso",
       "empresa": "Kdoce",
-      "email": "dgonzalez@kdoce.cl",
+      "email": "dbarrera@kdoce.cl",
       "telefono": "123123123123",
       "notas": "alksjdlaksjdlkas lajdlsajdkla kjalskdj alksd",
       "id": 2
@@ -23,6 +23,22 @@
       "telefono": "123123123123",
       "notas": "Nuevo cliente",
       "id": 3
+    },
+    {
+      "nombre": "Cecilia",
+      "empresa": "Fuentes",
+      "email": "cfuentes@asd.cl",
+      "telefono": "123123",
+      "notas": "werita",
+      "id": 4
+    },
+    {
+      "nombre": "Pamela",
+      "empresa": "asdasd",
+      "email": "asd@assd.cl",
+      "telefono": "123123",
+      "notas": "qasdhafgsjdhgsfya\n",
+      "id": 5
     }
   ]
 }
